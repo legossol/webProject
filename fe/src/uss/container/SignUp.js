@@ -16,7 +16,7 @@ const SignUp = () => {
     return  (
       <form style={{border:"1px solid #ccc"}}>
         <div className="container">
-          <h1>Sign Up</h1>
+          <h1>Sign Up</h1><button onClick={insertMany}>더미데이터입력</button>
           <p>Please fill in this form to create an account.</p>
           <hr/>
   

@@ -1,5 +1,5 @@
 package com.example.demo.uss.repository;
 
-public class AdminRepositoryImpl {
+public class AdminRepositoryImpl implements AdminRepository{
 
 }
