@@ -8,6 +8,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		//이 매서드가 @Component를 검색한다.
 	}
 
 }
