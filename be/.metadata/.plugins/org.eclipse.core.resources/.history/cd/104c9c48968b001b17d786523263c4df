@@ -2,10 +2,7 @@ package com.example.demo.uss.domain;
 
 import javax.persistence.*;
 
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-
-@Entity 
+@Entity
 @Table(name = "users")
 public class User {
 
@@ -17,8 +14,8 @@ public class User {
 	@Column(name = "name")
 	private String name;
 
-	@Column(name = "password")
-	private String password;
+	@Column(name = "passward")
+	private String passward;
 
 	@Column(name = "username")
 	private String username;
@@ -34,21 +31,5 @@ public class User {
 	
 	@Column(name = "regdate")
 	private String regdate;
-	@Builder
-	public User(String name, String password, String username, String email, String birthday, String gender,
-			String regdate) {
-		super();
-		this.name = name;
-		this.password = password;
-		this.username = username;
-		this.email = email;
-		this.birthday = birthday;
-		this.gender = gender;
-		this.regdate = regdate;
-		return;
-	}
-	public User() { return;}
-	
-	
 
 }
