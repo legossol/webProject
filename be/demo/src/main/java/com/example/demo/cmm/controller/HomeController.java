@@ -1,5 +1,10 @@
 package com.example.demo.cmm.controller;
 
-public class HomeController {
+import org.springframework.web.bind.annotation.GetMapping;
 
+public class HomeController {
+	@GetMapping("/")
+	pubklic String home() {
+		
+	}
 }

@@ -57,29 +57,13 @@ public class DummyGenerator {
 		shuffle(ns3);
 		return ns.get(0) +ns1.get(0) +ns2.get(0)+ns3.get(0) + ls.get(0);
 	}
-	/*********************************
-	 * Student Dummy Data Generator 
-	 * *******************************
-	 */
-	/**
-	 * 1970 ~ 2000 사이의 랜덤한 연도수 뽑기 
-	 * 
-	 * 윤년은 해당 연도를 4로 나눈 값이 0인 것을 의미한다. 
-	 * && 그중 100으로 나눈 값이 0인 것은 윤년에서 제외하나, 
-	 * || 400으로 나눈 값이 0인 것은 윤년으로 포함된다. 
-	 * 그 외의 나머지 연도는 평년이다.
-	 * */
+	
 	public String makeBirthday() {
-		int month = rangeRandom.apply(1, 12);
+		int mont = rangeRandom.apply(1, 12);
 		int date = rangeRandom.apply(1,30);
 		int date1 = rangeRandom.apply(1,31);
 		int date2 = rangeRandom.apply(1,29);
 		int date3 = rangeRandom.apply(1,28);
-		
-		int year = rangeRandom.apply(1970, 2000);
-		
-		boolean leapYear = false;
-		if(year%4==0) {leapYear=true;}
 		
 		return mont.get(0) + date.get(0);
 	}
